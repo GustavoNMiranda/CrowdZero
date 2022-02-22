@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background">
+
+    <LinearLayout
+        android:id="@+id/AUX_Linear8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        >
+
+        <ImageView
+            android:id="@+id/BTN_Voltar_Concorda"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back_arrow_m2"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15sp"
+            />
+
+        <TextView
+            android:id="@+id/TXT_ConcordaOcupacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:fontFamily="@font/poppins_bold"
+            android:theme="@style/Theme.TXT_VEscuro"
+            android:text="@string/Concorda"
+            />
+
+        <TextView
+            android:id="@+id/BTN_Interogacao_Concorda"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginStart="30sp"
+            android:textAlignment="center"
+            android:background="@drawable/interrogacao_button"
+            android:text="?"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TXT_Info_Concorda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="91dp"
+        android:layout_below="@+id/AUX_Linear8"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/AUX_Linear10"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/ConcordaInfo"
+        android:textSize="14sp"
+        android:theme="@style/Theme.TXT_VEscuro" />
+
+    <LinearLayout
+        android:layout_marginTop="15sp"
+        android:id="@+id/AUX_Linear10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AUX_Linear8"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_marginEnd="50sp"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/IMG_Estado_Concoda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reporte_button_moderada_e"
+            />
+
+        <TextView
+            android:id="@+id/TXT_Estado_Concordo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:theme="@style/Theme.TXT_VEscuro"
+            android:textAlignment="center"
+            android:text="@string/Moderada"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/AUX_Linear9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:layout_below="@+id/TXT_Info_Concorda">
+    <Button
+        android:id="@+id/BTN_Sim"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_login_button"
+        android:text="@string/Sim"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/BTN_Nao"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_login_button"
+        android:backgroundTint="@color/TextMain"
+        android:text="@string/Nao"
+        android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

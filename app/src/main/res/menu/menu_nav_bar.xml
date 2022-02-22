@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/M_MapView"
+        android:title=""
+        android:icon="@drawable/custom_navbar_mapview"
+        />
+
+    <item
+        android:id="@+id/M_Favoritos"
+        android:title=""
+        android:icon="@drawable/custom_navbar_favoritos"
+        />
+
+    <item
+        android:id="@+id/M_PlaceHolder"
+        android:title=""
+        android:enabled="false"
+        />
+
+    <item
+        android:id="@+id/M_Estatisticas"
+        android:title=""
+        android:icon="@drawable/custom_navbar_estatisticas"
+        />
+
+    <item
+        android:id="@+id/M_Perfil"
+        android:title=""
+        android:icon="@drawable/custom_navbar_perfil"
+        />
+
+
+</menu>

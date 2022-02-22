@@ -1,0 +1,154 @@
+<resources>
+    <string name="app_name">CrowdZero</string>
+    <string name="TODO">TODO</string>
+
+    <!-- Tela Intro -->
+    <string name="BemVindo">Bem Vindo a CrowdZero</string>
+    <string name="Proximo">Próximo</string>
+    <string name="Voltar">Voltar</string>
+    <string name="Terminar">Terminar</string>
+    <string-array name="Descricao">
+        <item>Verifique a ocupação de diversos locais em sua região</item>
+        <item>Veja os Reportes de Outros Usuários</item>
+        <item>Obtenha Dados e Gráficos de Ocupação</item>
+        <item>Participe de um Ranking Global de Pontuação de Reportes</item>
+        <item>Contribua para a Comunidade ao Realizar Reportes</item>
+    </string-array>
+
+    <!-- Tela Login -->
+    <string name="Login">Login</string>
+    <string name="DigiteDados">Digite seus dados para aceder à sua conta</string>
+    <string name="Email">Email</string>
+    <string name="Senha">Senha</string>
+    <string name="FazerLogin">Fazer Login</string>
+    <string name="OuFaça">Ou faça login com</string>
+    <string name="NaoConta">Não tem uma conta?</string>
+    <string name="ERRO_LoginSenha">Login ou Senha Incorretos</string>
+
+    <!-- Tela Registar -->
+    <string name="Registar">Registar</string>
+    <string name="DigiteDadosR">Digite seus dados para registar à sua conta</string>
+    <string name="OuRegiste">Ou registe-se com</string>
+    <string name="PossuiConta">Já possui uma conta?</string>
+    <string name="ConfimarSenha">Confirmar Senha</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="ERRO_SenhasDiferentes">Senha de Confirmação Diferente</string>
+    <string name="ERRO_EspacosEmBranco">Por Favor Preencha Todos os Campos</string>
+    <string name="ERRO_Conexao">Falha de Conexão</string>
+    <string name="ERRO_JaExiste">Esse Usuário já Existe</string>
+    <string name="ERRO_SenhaCurta">A Senha Deve Ter no Minimo 8 Digitos</string>
+
+    <!-- Tela MinhasInstituicoes -->
+    <string name="ERRO_SemInstituicao">Você não esta Associado a Nenhuma Instituição</string>
+
+
+    <!-- Tela MinhasInstituicoes -->
+    <string name="Favoritos">Favoritos</string>
+    <string name="SolicitarNovaAssociacao">Solicitar Nova Associação</string>
+
+    <!-- Tela Estatísticas -->
+    <string name="Estatisticas">Estatísticas</string>
+    <string name="Pontuacao">Pontuação</string>
+    <string name="Divisao">Divisão</string>
+
+    <!-- Tela Perfil -->
+    <string name="Nome">Nome</string>
+    <string name="Pontos">Pontos</string>
+    <string name="NPontos">0</string>
+    <string name="Reportes">Reportes</string>
+    <string name="NReportes">0</string>
+    <string name="Conquistas">Conquistas</string>
+    <string name="NConquistas">0</string>
+    <string name="MinhasInstituicoes">Minhas Instituições</string>
+    <string name="Nivel">Nível</string>
+    <string name="Conquista_1">Faça</string>
+    <string name="Conquista_2">reportes</string>
+    <string name="C_Pontos_1">Ganhe</string>
+    <string name="C_Pontos_2">Pontos</string>
+
+    <!-- Tela Estatísticas -->
+
+    <string name="Rank">Rank</string>
+    <string name="Ouro">Ouro</string>
+    <string name="Prata">Prata</string>
+    <string name="Bronze">Bronze</string>
+    <string name="SemDivisao">Sem Divisão</string>
+
+    <!-- Tela Associar Info -->
+    <string name="Associese">Associe-se à uma instituição</string>
+    <string name="Tenhaacesso">Tenha acesso a informações de locais específicos</string>
+    <string name="AoAssociarse">Ao associar-se a uma instituição terá acesso a estatísticas de ocupação sobre locais específicos dentro desta instituição.</string>
+    <string name="AlertaDDesocupacao">Alerta de desocupação</string>
+    <string name="Querutilizar">Quer utilizar a biblioteca de sua faculdade mas sempre está sempre cheia? Defina um alerta e alertaremos você quando o local estiver com baixa densidade.</string>
+    <string name="Solicitar">Solicitar</string>
+    <string name="Continuar">Continuar</string>
+
+    <!-- Tela Associar Codigo -->
+    <string name="DigiteCodigo">Digite o código \n que lhe foi associado</string>
+    <string name="Oque"> O que é isto?</string>
+    <string name="Informacoes">Informações</string>
+    <string name="ERRO_CodigoErrado">Este Código não Pertence a Nenhuma Instituição</string>
+
+    <!-- Tela Associar Verificacao -->
+    <string name="VoceEsta">Você está \n se associando a:</string>
+    <string name="Associados">Associados</string>
+    <string name="NumeroDeusuários">Número de usuários associados a esta mesma instituição</string>
+    <string name="Espacos">Espaços</string>
+    <string name="QuantidaDedeespacos">Quantidade de espaços internos cadastrados na instituição.</string>
+    <string name="Endereco">Endereço</string>
+    <string name="Telefone">Telefone</string>
+    <string name="Confirmar">Confirmar</string>
+    <string name="TentarNovamente">Tentar Novamente</string>
+
+    <!-- Tela Associar Sucesso -->
+
+    <string name="SolicitacaoEnviada">Solicitação enviada com sucesso!</string>
+    <string name="VoceRealizou">Você realizou a solicitação para se afiliar à instituição</string>
+    <string name="IremosProcessar">Iremos processar seu pedido e você receberá um e-mail \n a respeito de sua solicitação.</string>
+    <string name="VoltarPrincipal">Voltar à Página Principal</string>
+
+    <!-- Tela Configuracoes -->
+
+    <string name="Configuracoes">Configurações</string>
+    <string name="Logout">Logout</string>
+
+    <!-- Tela Sheet Info -->
+
+    <string name="Ocupacao">Ocupação</string>
+    <string name="CliquePara">Estado atual da instituição.</string>
+    <string name="SemInfo">Não há informações recentes sobre este local. O ultimo reporte foi há</string>
+    <string name="Reportar">Reportar</string>
+    <string name="Alta">Alta</string>
+    <string name="Moderada">Moderada</string>
+    <string name="Baixa">Baixa</string>
+    <string name="Desenfeccao">Desinfecção</string>
+    <string name="LocaisInternos">Locais Internos</string>
+    <string name="VoceE">Você é associado a esta instituição. Clique para ver reporte de locais internos.</string>
+    <string name="Dias">dia(s)</string>
+    <string name="Horas">hora(s)</string>
+    <string name="AindaNao">Ainda não ocorreu reportes nessa instituição</string>
+
+    <!-- Tela Reportar -->
+
+    <string name="ReportarOcupacao">Reportar Ocupação</string>
+    <string name="SelecionaA">Selecione a afirmação que melhor descreve a ocupação atual do local</string>
+
+    <!-- Tela Como Reportar -->
+    <string name="ComoReportar">Como reportar?</string>
+    <string name="PopulacaoMinima">População mínima Possível manter a distância de segurança</string>
+    <string name="AlgumaPopulacao">Alguma população Dificuldade em manter a distância de segurança</string>
+    <string name="MuitaPopulacao">Muita população Impossível manter a distância de segurança</string>
+
+    <!-- Tela Concorda -->
+    <string name="Concorda">Você Concorda?</string>
+    <string name="ConcordaInfo">Outras pessoas reportaram uma densidade</string>
+    <string name="ConcordaInfo2">no local, Você Concorda?</string>
+    <string name="Nao">Não</string>
+    <string name="Sim">Sim</string>
+
+    <!-- Tela Locais Internos -->
+    <string name="Vocepode">Você pode reportar a ocupação de cada local dentro da instituição</string>
+    <string name="NaoLocais">Não a locais disponíveis</string>
+
+
+</resources>

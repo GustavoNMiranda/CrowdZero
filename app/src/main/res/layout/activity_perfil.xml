@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil">
+
+    <ImageView
+        android:id="@+id/BTN_Configuracoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        android:src="@drawable/ic_config"
+        android:contentDescription="@string/TODO" />
+
+    <ImageView
+        android:id="@+id/IMG_Perfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circle"
+
+        android:contentDescription="@string/TODO"
+        android:src="@drawable/img_perfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/TXT_Nivel"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_input"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="@string/Nivel"
+        android:textColor="@color/TextMain"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:theme="@style/Theme.TXT_VEscuro"
+        app:layout_constraintBottom_toBottomOf="@+id/IMG_Perfil"
+        app:layout_constraintEnd_toEndOf="@+id/IMG_Perfil"
+        app:layout_constraintStart_toStartOf="@+id/IMG_Perfil"
+        app:layout_constraintTop_toTopOf="@+id/IMG_Perfil"
+        app:layout_constraintVertical_bias="0.921" />
+
+    <TextView
+        android:id="@+id/TXT_Nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Nome"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IMG_Perfil" />
+
+    <TextView
+        android:id="@+id/TXT_NReportes"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/NReportes"
+        android:textSize="20sp"
+
+        android:theme="@style/Theme.TXT_VEscuro"
+
+        app:layout_constraintEnd_toEndOf="@+id/TXT_Reportes"
+        app:layout_constraintStart_toStartOf="@+id/TXT_Reportes"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_Nome" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+
+        android:theme="@style/Theme.Separador"
+        app:layout_constraintEnd_toStartOf="@+id/TXT_Reportes"
+        app:layout_constraintStart_toEndOf="@+id/TXT_Pontos"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_Nome" />
+
+    <TextView
+        android:id="@+id/TXT_Pontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Pontos"
+
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:theme="@style/Theme.TXT_VClaro2"
+        app:layout_constraintEnd_toStartOf="@+id/TXT_Reportes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_NPontos" />
+
+    <TextView
+        android:id="@+id/TXT_Conquistas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Conquistas"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+
+        android:theme="@style/Theme.TXT_VClaro2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/TXT_Reportes"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_NConquistas" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+
+
+        android:theme="@style/Theme.Separador"
+        app:layout_constraintEnd_toStartOf="@+id/TXT_Conquistas"
+        app:layout_constraintStart_toEndOf="@+id/TXT_Reportes"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_Nome" />
+
+    <TextView
+        android:id="@+id/TXT_NConquistas"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="1dp"
+        android:fontFamily="@font/poppins"
+
+        android:text="@string/NConquistas"
+        android:textSize="20sp"
+        android:theme="@style/Theme.TXT_VEscuro"
+        app:layout_constraintEnd_toEndOf="@+id/TXT_Conquistas"
+        app:layout_constraintStart_toStartOf="@+id/TXT_Conquistas"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_Nome" />
+
+    <TextView
+        android:id="@+id/TXT_Reportes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Reportes"
+
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:theme="@style/Theme.TXT_VClaro2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_NReportes" />
+
+    <TextView
+        android:id="@+id/TXT_NPontos"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="1dp"
+        android:fontFamily="@font/poppins"
+
+        android:text="@string/NPontos"
+        android:textSize="20sp"
+        android:theme="@style/Theme.TXT_VEscuro"
+        app:layout_constraintEnd_toEndOf="@+id/TXT_Pontos"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/TXT_Pontos"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_Nome" />
+
+
+
+    <TextView
+        android:id="@+id/TXT_ListaConquistas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Conquistas"
+        android:textSize="20sp"
+        android:theme="@style/Theme.TXT_VEscuro"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_Pontos" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerConquistas"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_ListaConquistas"
+        app:layout_constraintVertical_bias="0.0"
+        tools:itemCount="3"
+        tools:listitem="@layout/model_list_conquistas" />
+
+    <fragment
+        android:id="@+id/Frag_Nav"
+        android:name="com.example.crowdzero.navbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout="@layout/fragment_navbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

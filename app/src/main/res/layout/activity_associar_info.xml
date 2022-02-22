@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssociarInfo"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/BTN_Voltar_Associar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/TXT_Associese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BTN_Voltar_Associar"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/Associese"
+            android:theme="@style/Theme.TXT_VEscuro" />
+
+        <ImageView
+            android:id="@+id/IMG_Associar"
+            android:layout_width="317dp"
+            android:layout_height="168dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/img_associar"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/TXT_Associese"
+
+            />
+
+        <ImageView
+            android:id="@+id/IMG_Associar_Map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/IMG_Associar"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/ic_mapview_icon_enable" />
+
+        <TextView
+            android:id="@+id/TXT_T_Info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IMG_Associar"
+            android:layout_toEndOf="@+id/IMG_Associar_Map"
+            android:textSize="13sp"
+            android:theme="@style/Theme.TXT_VEscuro"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/Tenhaacesso" />
+
+        <TextView
+            android:id="@+id/TXT_Info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TXT_T_Info1"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="15sp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/AoAssociarse"
+            android:textSize="11sp"
+            android:theme="@style/Theme.TXT_VEscuro" />
+
+        <ImageView
+            android:id="@+id/IMG_Associar_Notificacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TXT_Info1"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="6dp"
+            app:srcCompat="@drawable/ic_notification" />
+
+
+        <TextView
+            android:id="@+id/TXT_T_Info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_toEndOf="@+id/IMG_Associar_Notificacao"
+            android:layout_below="@id/TXT_Info1"
+            android:theme="@style/Theme.TXT_VEscuro"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/AlertaDDesocupacao"
+             />
+
+        <TextView
+            android:id="@+id/TXT_Info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:theme="@style/Theme.TXT_VEscuro"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="44dp"
+            android:layout_below="@+id/TXT_T_Info2"
+            android:text="@string/Querutilizar"
+             />
+
+        <Button
+            android:id="@+id/BTN_Solicitar"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TXT_Info2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/custom_login_button"
+            android:text="@string/Solicitar"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+</ScrollView>

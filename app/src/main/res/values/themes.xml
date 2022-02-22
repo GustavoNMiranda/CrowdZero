@@ -1,0 +1,76 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+<!--***********************************************************************************************************************-->
+    <style name="Theme.CrowdZero" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/TextMain</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColor">@color/TextAlt</item>
+
+        <item name="android:windowFullscreen">true</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+
+    </style>
+<!--***********************************************************************************************************************-->
+    <style name="Theme.TXT_VEscuro" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textColor">@color/TextMain</item>
+
+    </style>
+<!--***********************************************************************************************************************-->
+    <style name="Theme.TXT_VClaro" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textColor">@color/TextAlt</item>
+    </style>
+
+<!--***********************************************************************************************************************-->
+    <style name="Theme.TXT_VClaro2" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textColor">@color/TextAlt2</item>
+    </style>
+<!--***********************************************************************************************************************-->
+    <style name="Theme.TXT_Dropdown" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textColor">@color/Dropdown</item>
+    </style>
+    <!--***********************************************************************************************************************-->
+    <style name="Theme.Separador" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:background">@color/TextAlt</item>
+    </style>
+    <style name="Theme.Separador2" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:background">@color/TextAlt2</item>
+    </style>
+<!--***********************************************************************************************************************-->
+    <style name="Theme.NavBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/IconMenuSelected</item>
+
+    </style>
+<!--***********************************************************************************************************************-->
+    <style name="Theme.BottomAppBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+<!--***********************************************************************************************************************-->
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+    </style>
+<!--***********************************************************************************************************************-->
+    <style name="DialogAnimation" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+<!--***********************************************************************************************************************-->
+    <style name="Theme.Splash" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+</resources>

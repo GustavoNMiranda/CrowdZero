@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registar">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageButton
+        android:id="@+id/BTN_Voltar_Registar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Trasparente"
+        android:src="@drawable/ic_back_arrow"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+         />
+
+    <TextView
+        android:id="@+id/TXT_Registar_R"
+        android:layout_width="121dp"
+        android:layout_height="41dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Registar"
+        android:textSize="26sp"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/BTN_Voltar_Registar" />
+
+    <TextView
+        android:id="@+id/TXT_RegistarAbaixo_R"
+        android:layout_width="159dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/DigiteDadosR"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
+        android:layout_below="@+id/TXT_Registar_R"/>
+
+    <EditText
+        android:id="@+id/INP_Nome_R"
+        android:layout_width="312dp"
+        android:layout_height="85dp"
+        android:textColor="@color/TextMain"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/ic_check_circle"
+        android:drawablePadding="12dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/Nome"
+        android:inputType="textPersonName"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TXT_RegistarAbaixo_R" />
+
+    <EditText
+        android:id="@+id/INP_Email_R"
+        android:layout_width="312dp"
+        android:layout_height="85dp"
+        android:textColor="@color/TextMain"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/ic_check_circle"
+        android:drawablePadding="12dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/INP_Nome_R" />
+
+    <EditText
+        android:id="@+id/INP_Password_R"
+        android:layout_width="312dp"
+        android:layout_height="85dp"
+        android:textColor="@color/TextMain"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/ic_password_eye"
+        android:drawablePadding="12dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/Senha"
+        android:inputType="textPassword"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/INP_Email_R"/>
+
+    <EditText
+        android:id="@+id/INP_Password2_R"
+        android:layout_width="312dp"
+        android:layout_height="85dp"
+        android:textColor="@color/TextMain"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/ic_password_eye"
+        android:drawablePadding="12dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/ConfimarSenha"
+        android:inputType="textPassword"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/INP_Password_R" />
+
+    <Button
+        android:id="@+id/BTN_Registar_R"
+        android:layout_width="312dp"
+        android:layout_height="55dp"
+        android:background="@drawable/custom_login_button"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Registar"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/INP_Password2_R" />
+
+
+
+    <LinearLayout
+        android:id="@+id/AUX_Linear7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/BTN_Registar_R"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        >
+    <TextView
+        android:id="@+id/TXT_Registrar_R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/PossuiConta"
+        android:textSize="13sp"
+         />
+
+    <TextView
+        android:id="@+id/BTN_Login_R"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/FazerLogin"
+        android:theme="@style/Theme.TXT_VEscuro"
+
+         />
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

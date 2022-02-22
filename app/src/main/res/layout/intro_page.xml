@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:id="@+id/TXT_Descricao"
+
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+
+
+        android:textSize="17sp"
+        android:text="Verifique a ocupação de diversos locais em sua região"
+        android:textStyle="bold"
+        android:theme="@style/Theme.TXT_VClaro"
+        android:width="230dp"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/Img_Intro"
+        android:src="@drawable/intro_img_1"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/TODO" />
+
+
+
+</RelativeLayout>

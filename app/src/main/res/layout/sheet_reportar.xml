@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bottom_sheet_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/AUX_Linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+
+        >
+
+        <ImageView
+            android:id="@+id/BTN_Voltar_Reportar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back_arrow_m2"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15sp"
+
+            />
+
+        <TextView
+            android:id="@+id/TXT_ReportarOcupacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:fontFamily="@font/poppins_bold"
+            android:theme="@style/Theme.TXT_VEscuro"
+            android:text="@string/ReportarOcupacao"
+            />
+
+        <TextView
+            android:id="@+id/BTN_Interogacao"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginStart="10sp"
+            android:textAlignment="center"
+            android:background="@drawable/interrogacao_button"
+            android:text="?"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TXT_SelecionaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:text="@string/SelecionaA"
+        android:layout_below="@id/AUX_Linear2"
+        android:layout_marginEnd="98dp"
+        android:layout_marginStart="48sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/AUX_Linear4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:orientation="vertical"
+        android:layout_below="@id/TXT_SelecionaA">
+
+        <RadioGroup
+            android:id="@+id/group_reporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/BTN_Radio_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:button="@drawable/reporte_change_button_baixa"
+                android:layout_marginEnd="40dp"
+                />
+            <RadioButton
+                android:id="@+id/BTN_Radio_M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:checked="false"
+                android:button="@drawable/reporte_change_button_moderada"
+                />
+            <RadioButton
+                android:id="@+id/BTN_Radio_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:button="@drawable/reporte_change_button_alta"
+                />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/AUX_Linear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_medium"
+                android:theme="@style/Theme.TXT_VEscuro"
+                android:textAlignment="center"
+                android:text="@string/Baixa"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                android:theme="@style/Theme.TXT_VEscuro"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:text="@string/Moderada"
+                />
+            <TextView
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                android:theme="@style/Theme.TXT_VEscuro"
+                android:text="@string/Alta"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/BTN_Reportar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="20sp"
+        android:enabled="false"
+        android:background="@drawable/reporte_change_button_reportar"
+        android:text="@string/Reportar"
+        android:textColor="@color/white"
+        android:layout_below="@+id/AUX_Linear4"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MinhasInstituicoes"
+    >
+
+    <TextView
+        android:id="@+id/TXT_MInstituicoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/MinhasInstituicoes"
+        android:textSize="26sp"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:layout_marginTop="40sp"
+        android:layout_centerHorizontal="true"
+         />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerIntituicoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BTN_SolicitarAssociacao"
+        android:layout_below="@+id/TXT_MInstituicoes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="3"
+        tools:listitem="@layout/model_list_instituicoes">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/BTN_SolicitarAssociacao"
+        android:layout_width="258dp"
+        android:layout_height="42dp"
+        android:layout_above="@+id/Frag_Nav"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_solicitar_button"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/SolicitarNovaAssociacao"
+        android:textColor="@color/white" />
+
+    <fragment
+        android:id="@+id/Frag_Nav"
+        android:name="com.example.crowdzero.navbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="20dp"
+        tools:layout="@layout/fragment_navbar" />
+
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComoReportar"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/BTN_Voltar_ComoReportar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_back_arrow"
+        />
+
+    <TextView
+        android:id="@+id/TXT_ComoReportar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BTN_Voltar_ComoReportar"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="26sp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:text="@string/ComoReportar" />
+
+    <ImageView
+        android:id="@+id/IMG_Reporta_B"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TXT_ComoReportar"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/reporte_button_baixa_e"
+        />
+
+    <TextView
+        android:id="@+id/TXT_Baixa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IMG_Reporta_B"
+        android:textSize="19sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_bold"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:text="@string/Baixa" />
+
+    <TextView
+        android:id="@+id/TXT_PopulacaoMinima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"
+        android:layout_below="@+id/TXT_Baixa"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_medium"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:text="@string/PopulacaoMinima" />
+
+    <ImageView
+        android:id="@+id/IMG_Reporta_M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/TXT_PopulacaoMinima"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/reporte_button_moderada_e"
+        />
+
+    <TextView
+        android:id="@+id/TXT_Moderada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IMG_Reporta_M"
+        android:textSize="19sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_bold"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:text="@string/Moderada" />
+
+
+    <TextView
+        android:id="@+id/TXT_AlgumaPopulacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"
+        android:layout_below="@+id/TXT_Moderada"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_medium"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:text="@string/AlgumaPopulacao" />
+
+    <ImageView
+        android:id="@+id/IMG_Reporta_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/TXT_AlgumaPopulacao"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/reporte_button_alta_e"
+        />
+
+    <TextView
+        android:id="@+id/TXT_Alta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IMG_Reporta_A"
+        android:textSize="19sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_bold"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:text="@string/Alta" />
+
+
+    <TextView
+        android:id="@+id/TXT_MuitaPopulacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"
+        android:layout_marginBottom="40dp"
+        android:layout_below="@+id/TXT_Alta"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_medium"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:text="@string/MuitaPopulacao" />
+</RelativeLayout>
+</ScrollView>

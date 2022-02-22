@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Estatisticas"
+    >
+
+    <TextView
+        android:id="@+id/TXT_Estatisticas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Estatisticas"
+        android:textSize="26sp"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:layout_marginTop="40sp"
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView
+        android:id="@+id/TXT_Rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50sp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Rank"
+        android:textSize="20sp"
+        android:theme="@style/Theme.TXT_VClaro2"
+        android:layout_below="@id/TXT_Estatisticas" />
+
+
+    <TextView
+        android:id="@+id/TXT_Divisao_R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Divisao"
+        android:layout_below="@+id/TXT_Rank"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/TXT_Pontos_R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Pontos"
+        android:layout_below="@+id/TXT_Rank"
+        android:layout_marginTop="5sp"
+        android:layout_marginStart="210dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:theme="@style/Theme.TXT_VEscuro"
+        />
+
+    <TextView
+        android:id="@+id/TXT_Nome_T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Nome"
+        android:layout_below="@+id/TXT_Rank"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:theme="@style/Theme.TXT_VEscuro"/>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TXT_Nome_T"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerRank"
+                android:layout_width="match_parent"
+                android:layout_height="447dp"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbars="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/model_list_ranking" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <fragment
+        android:id="@+id/Frag_Nav"
+        android:name="com.example.crowdzero.navbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        tools:layout="@layout/fragment_navbar"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

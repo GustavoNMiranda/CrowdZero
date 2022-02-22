@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background">
+
+
+    <LinearLayout
+        android:id="@+id/AUX_Linear11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        >
+        <ImageView
+            android:id="@+id/BTN_Voltar_LInternos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back_arrow_m2"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15sp"
+
+            />
+
+        <TextView
+            android:id="@+id/TXT_LocaisInternos_F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:fontFamily="@font/poppins_bold"
+            android:theme="@style/Theme.TXT_VEscuro"
+            android:text="@string/LocaisInternos"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TXT_Info_LInternos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="90sp"
+        android:layout_below="@+id/AUX_Linear11"
+        android:text="@string/Vocepode"
+        />
+
+    <Spinner
+        android:id="@+id/Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_dropdown"
+        android:elevation="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TXT_Info_LInternos"
+        />
+
+
+    <TextView
+        android:id="@+id/TXT_N_LocalInterno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:textSize="14sp"
+        android:layout_marginStart="35sp"
+        android:layout_below="@+id/Spinner"
+        android:text="@string/Nome"
+        />
+
+    <TextView
+        android:id="@+id/TXT_Descricao_LocalInterno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:textSize="14sp"
+        android:layout_marginStart="35sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/TXT_MarcadorOcupacaoInternos"
+        android:layout_below="@+id/TXT_N_LocalInterno"
+        android:text="@string/Vocepode"
+        />
+
+    <TextView
+        android:id="@+id/TXT_MarcadorOcupacaoInternos"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20sp"
+        android:text="@string/Desenfeccao"
+        android:layout_below="@+id/Spinner"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/white"
+        android:background="@drawable/background_ocupacao_seminfo"
+        />
+
+    <Button
+        android:id="@+id/BTN_Reportar_Locais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TXT_Descricao_LocalInterno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/reporte_change_button_reportar"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Reportar"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

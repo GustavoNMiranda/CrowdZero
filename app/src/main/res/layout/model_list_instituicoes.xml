@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="14dp"
+    android:layout_marginEnd="14dp"
+    android:layout_marginBottom="16dp"
+    tools:showIn="@layout/activity_minhas_instituicoes">
+
+    <ImageView
+        android:id="@+id/IC_instituicao"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="#8A3731"
+        android:contentDescription="@string/TODO"
+        android:elevation="10dp"
+        />
+
+    <TextView
+        android:id="@+id/TXT_NomeInstituicao"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/IC_instituicao"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Instituto Politécnico de Viseu"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TXT_Endereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.TXT_VClaro2"
+        android:fontFamily="@font/poppins"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/IC_instituicao"
+        android:layout_below="@+id/TXT_NomeInstituicao"
+        android:textSize="14sp"
+        android:text="AV. Politécnica, Viseu."
+        />
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/IC_instituicao"
+        android:layout_marginTop="8dp"
+        android:theme="@style/Theme.Separador"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>

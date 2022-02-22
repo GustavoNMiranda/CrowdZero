@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuConfiguracoes">
+
+
+    <TextView
+        android:id="@+id/TXT_Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:textSize="13sp"
+        android:layout_marginStart="30sp"
+        android:layout_below="@+id/AUX_Linear"
+        android:text="@string/Logout" />
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"
+        android:layout_below="@+id/TXT_Logout"
+        android:layout_marginTop="10dp"
+        android:theme="@style/Theme.Separador"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/IMG_Logout"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="40sp"
+        android:layout_below="@+id/AUX_Linear"
+        android:layout_width="20dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_height="30dp"
+        android:src="@drawable/ic_logout" />
+
+    <LinearLayout
+        android:id="@+id/AUX_Linear"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/BTN_Voltar_Configuracoes"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="15sp"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_back_arrow_m2" />
+
+        <TextView
+            android:id="@+id/TXT_Configuracoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="26sp"
+            android:theme="@style/Theme.TXT_VEscuro"
+            android:text="@string/Configuracoes" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/activity_perfil">
+
+    <TextView
+        android:id="@+id/TXT_NomeConquista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome Conquista"
+        android:textSize="14sp"
+        android:theme="@style/Theme.TXT_VEscuro"
+        android:fontFamily="@font/poppins_medium"
+        />
+    <TextView
+        android:id="@+id/TXT_NPontosConquista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.TXT_VClaro2"
+        android:fontFamily="@font/poppins"
+        android:layout_below="@+id/TXT_NomeConquista"
+        android:textSize="13sp"
+        android:text="Ganhe 0 Pontos"
+        />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/TXT_NPontosConquista"
+        android:layout_marginTop="1dp"
+        android:theme="@style/Theme.Separador"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>
